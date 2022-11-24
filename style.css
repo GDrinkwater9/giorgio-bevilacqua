@@ -1,0 +1,273 @@
+
+
+ body {
+    font-family: "Poppins", sans-serif !important;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    background-color: black !important;
+    color: #fff !important;
+   
+ }
+
+ .hero{
+    background-image: url('images/pexels-adrien-olichon-2387793.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+ }
+ 
+.navbar-brand{
+    font-weight: bold;
+    font-family: 'Share Tech', sans-serif;
+}
+
+
+ .navbar-scrolled{
+   background-image: linear-gradient(to top, #000000, #101010, #1a1a1a, #242424, #2e2e2e);
+   padding-top: 10px;
+   padding-bottom: 10px;
+ }
+ 
+ .navbar .navbar-nav .nav-link {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Share Tech', sans-serif;
+    color: #fff !important;
+ }
+ 
+ .navbar-dark .navbar-nav .nav-link{
+    font-size: 1rem;
+    color: rgb(255, 255, 255) !important;
+ }
+
+ .navbar-dark .navbar-nav .nav-link:hover{
+    color: rgb(166, 255, 0)  !important;
+ }
+
+ .hero h1{
+   font-size:4rem;
+ }
+
+ h1{
+    font-weight: bold !important;
+    color: rgb(166, 255, 0) 
+ }
+
+ h5{
+   font-family: 'Share Tech', sans-serif;
+ }
+
+ span{
+    color: rgb(166, 255, 0);
+ }
+
+section{
+padding: 150px 0px;
+display: flex;
+align-items: center;
+text-align: center;
+}
+
+#about{
+align-items: center;
+text-align: center;
+}
+
+#about img{
+   width: 450px;
+   height: auto;
+}
+
+hr{
+  border: 1px solid  rgb(166, 255, 0) !important;
+}
+
+#about h1{
+   margin-bottom: 50px;
+}
+#education{
+   align-items: center !important;
+}
+
+#education h1{
+   margin-bottom: 50px;
+}
+
+
+
+@media (max-width:1023px) {
+   #about h1{
+      margin-top: 50px;
+      margin-bottom: 50px;
+   }
+   #education h1{
+      margin-top: 50px;
+      margin-bottom: 50px;
+   }
+}
+
+@media(max-width:507px){
+   .hero h1{
+      padding-top: 70px;
+      font-size: 2rem;
+   }
+}
+
+@media (max-width:500px) {
+   section{
+      padding: 50px 0px;
+   }
+   
+   #about img{
+      width: 300px;
+      height: auto;
+   }
+   
+}
+
+@media (min-width:768px) and (max-width:991px){
+   .hero h1{
+      font-size: 3rem;
+  }
+}
+@media (min-width:508px) and (max-width:768px){
+   .hero h1{
+      font-size: 2.7rem;
+  }
+}
+
+@media (min-width:320px) and (max-width:374px){
+
+}
+
+
+/* TIMELINE */
+
+.timeline-items{
+	max-width: 1000px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #2f363e;
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: center;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: rgb(166, 255, 0);
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-date{
+	font-size: 18px;
+	color:  rgb(166, 255, 0);
+	margin:6px 0 15px;
+}
+.timeline-content{
+    background-color: #181818;
+	padding: 30px;
+	border-radius: 5px;
+}
+.timeline-content h3{
+    font-size: 20px;
+	color: #ffffff;
+	margin:0 0 10px;
+	text-transform: capitalize;
+   font-family: 'Share Tech', sans-serif;
+   font-size: 1.5rem;
+	font-weight: 400;
+}
+.timeline-content p{
+    color: #c8c8c8;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
+#head-time{
+   color: rgb(166, 255, 0);
+}
+
+/* timeline responsive */
+@media(max-width: 767px){
+   .timeline-items::before{
+      left: 5px;
+	}
+	.timeline-item:nth-child(odd){
+      padding-right: 0;
+		text-align: center;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+      padding-left: 25px;
+	}
+	.timeline-dot{
+      left:0;
+	}
+   
+}
+
+/* PROGRESS-BAR */
+
+.progress{
+   margin-bottom: 30px;
+}
+
+.progress-bar{
+   background-color:rgb(166, 255, 0) !important;
+   animation: progress 2s;
+}
+
+@keyframes progress{
+   
+   0%{
+      width: 0;
+   }
+  
+}
+
+.con-prog{
+  background-color:  #111111;
+  padding: 20px 20px;
+  border-radius: 5px;
+}
+
+/* FOOTER */
+footer{
+   width: 100%!important;
+   position: absolute;
+   background-color:  #111111;
+}
+
+i{
+   font-size: 2rem;
+   color: rgb(166, 255, 0);
+}
