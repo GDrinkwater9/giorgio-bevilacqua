@@ -98,6 +98,9 @@ hr{
    margin-bottom: 50px;
 }
 
+@media(max-width:900){
+
+}
 
 
 @media (max-width:1023px) {
@@ -113,10 +116,11 @@ hr{
 
 @media(max-width:507px){
    .hero h1{
-      padding-top: 70px;
+      padding-top: 60px;
       font-size: 2rem;
    }
 }
+
 
 @media (max-width:500px) {
    section{
@@ -141,9 +145,13 @@ hr{
   }
 }
 
-@media (min-width:320px) and (max-width:374px){
-
-}
+@media (max-width:991px) {
+   .navbar{
+      background-image: linear-gradient(to top, #000000, #101010, #1a1a1a, #242424, #2e2e2e);
+  
+   }
+ }
+ 
 
 
 /* TIMELINE */
