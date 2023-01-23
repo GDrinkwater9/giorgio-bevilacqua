@@ -29,3 +29,33 @@ window.addEventListener('click',(e) => {
         menu.classList.remove('show');
     }
 } )
+
+
+function DownloadFile(cv) {
+
+    var url = "CV_GIORGIO_BEVILACQUA1.pdf" + cv;
+
+   
+    var req = new XMLHttpRequest();
+    req.open("GET", url, true);
+    req.responseType = "blob";
+    req.onload = function () {
+
+        var blob = new Blob([req.response], { type: "application/octetstream" });
+
+        var isIE = false || !!document.documentMode;
+        if (isIE) {
+            window.navigator.msSaveBlob(blob,cv);
+        } else {
+            var url = window.URL || window.webkitURL;
+            link = url.createObjectURL(blob);
+            var a = document.getElementById("cv");
+            a.setAttribute("download", cv);
+            a.setAttribute("href", link);
+         
+            a.click();
+    
+        }
+    };
+    req.send();
+};
