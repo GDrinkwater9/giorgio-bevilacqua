@@ -26,6 +26,6 @@ const menu = document.querySelector('.navbar-collapse')
 window.addEventListener('click',(e) => {
     console.log(e.path.includes(nav));
     if(!e.path.includes(nav)){
-        menu.classList.remove('show')
+        menu.classList.remove('show');
     }
 } )
