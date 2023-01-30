@@ -282,8 +282,9 @@ i{
 
 .btn-cv{
    font-size: 2rem;
+   font-weight: bold!important;
    color: rgb(166, 255, 0)!important;
-   border: 1px solid  rgb(166, 255, 0)!important ;
+   border: 1px solid  rgb(166, 255, 0)!important;
 }
 
 .btn-cv:hover{
